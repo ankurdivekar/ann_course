@@ -1,0 +1,33 @@
+[project]
+name = "ann-course"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "matplotlib>=3.11.1",
+    "notebook>=7.6.1",
+    "numpy>=2.5.1",
+    "pandas>=3.0.5",
+    "plotly>=6.9.0",
+    "scipy>=1.18.0",
+    "streamlit>=1.60.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.8.7",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["F401"]  # Allow unused imports (common in notebooks)
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
