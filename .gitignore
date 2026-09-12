@@ -1,3 +1,3 @@
-references/Understanding Deep Learning
-references/Machine Learning
+references/
 *.pyc
+.DS_Store
